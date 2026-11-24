@@ -184,7 +184,6 @@
     height: auto;
     min-height: 70px;
     padding: 14px 20px;
-
     flex-wrap: wrap;
     gap: 16px;
   }
@@ -224,11 +223,13 @@
     font-size: 25px;
   }
 
+  .header-actions {
+    width: 100%;
+  }
+
   .search-box {
-    width: 130px;
     height: 38px;
-    padding: 0 8px;
-    gap: 6px;
+    width: 100%;
   }
 
   .search-box input {
@@ -251,16 +252,6 @@
 
   .nav-link {
     font-size: 13px;
-  }
-}
-
-@media (max-width: 380px) {
-  .header-actions {
-    width: 100%;
-  }
-
-  .search-box {
-    width: 100%;
   }
 }
 
