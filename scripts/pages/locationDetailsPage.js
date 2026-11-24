@@ -18,16 +18,7 @@ function updateLocationBreadcrumb(location) {
 function updateLocationProfile(location) {
   const elements = locationDetailsElements.locationProfile;
 
-  const {
-    names,
-    types,
-    label,
-    subtitle,
-    dimension,
-    residentCount,
-    id,
-    created,
-  } = elements;
+  const { names, types, label, subtitle, dimension, id, created } = elements;
 
   names.forEach((name) => {
     name.textContent = location.name;
@@ -38,12 +29,8 @@ function updateLocationProfile(location) {
   });
 
   label.textContent = `LOCATION PROFILE #${location.id}`;
-  subtitle.textContent = `${location.type} · ${location.dimension}`;
+  subtitle.textContent = `${location.type} - ${location.dimension}`;
   dimension.textContent = location.dimension;
-
-  residentCount.forEach((count) => {
-    count.textContent = `${location.residents.length} Residents`;
-  });
 
   id.textContent = location.id;
   created.textContent = location.created;
@@ -55,7 +42,7 @@ async function updateLocationResidents(location) {
   const residentUrls = location.residents;
 
   elements.residentCount.forEach((count) => {
-    count.textContent = `${residentUrls.length} Residents`;
+    count.textContent = residentUrls.length;
   });
 
   const residents = await Promise.all(
@@ -82,8 +69,8 @@ async function initializeLocationDetailsPage() {
     await updateLocationResidents(location);
   } catch (error) {
     const container = getElement(".main-container");
-
     showErrorMessage(error, container, "Failed to load location.");
+    console.error(error);
   }
 }
 

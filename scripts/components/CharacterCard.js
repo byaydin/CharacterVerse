@@ -21,7 +21,7 @@ export function CharacterCard(character) {
           <h3 class="character-name">${character.name}</h3>
 
           <p class="character-species">
-            ${character.species} · ${character.gender}
+            ${character.species} - ${character.gender}
           </p>
 
           <div class="character-info">

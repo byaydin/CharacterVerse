@@ -38,7 +38,7 @@
 
         <!-- Navigation -->
         <nav class="nav-links">
-          <a href="../" class="nav-link active">Explorer</a>
+          <a href="../" class="nav-link">Explorer</a>
           <a href="characters.html" class="nav-link">Characters</a>
           <a href="locations.html" class="nav-link">Locations</a>
           <a href="episodes.html" class="nav-link">Episodes</a>
@@ -64,7 +64,9 @@
     <!-- Main content -->
     <main class="main-content">
       <div class="main-container">
-        <section class="episode-details">
+        <!-- Detail Section -->
+        <section class="detail-section">
+          <!-- Breadcrumb -->
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../index.html">Home</a>
             <span>/</span>
@@ -73,80 +75,82 @@
             <span class="current js-episode-name">Episode Details</span>
           </nav>
 
-          <div class="episode-profile">
-            <div class="episode-cover">
-              <div class="episode-cover-content">
-                <span class="cover-label">RICK AND MORTY</span>
-                <span class="cover-code js-episode-code">S01E01</span>
+          <!-- Detail View -->
+          <div class="detail-view">
+            <div class="detail-view-card">
+              <div class="detail-view-card-content">
+                <span class="detail-view-card-label">RICK AND MORTY</span>
+                <span class="detail-view-card-value js-episode-code"
+                  >S01E01</span
+                >
                 <h1 class="js-episode-name">Pilot</h1>
-                <span class="cover-decoration">EPISODE</span>
+                <span class="detail-view-card-decoration">EPISODE</span>
               </div>
             </div>
 
-            <div class="episode-content">
-              <div class="episode-heading">
-                <span class="profile-label js-episode-label"
+            <div class="detail-view-content">
+              <div class="detail-view-heading">
+                <span class="detail-view-label js-episode-label"
                   >EPISODE PROFILE #001</span
                 >
                 <h2 class="js-episode-name">Pilot</h2>
-                <p class="episode-subtitle js-episode-subtitle">
-                  Season 1 · Episode 1
+                <p class="detail-view-subtitle js-episode-subtitle">
+                  Season 1 - Episode 1
                 </p>
               </div>
 
-              <div class="episode-info">
-                <div class="episode-info-item">
+              <div class="detail-view-info">
+                <div class="detail-view-info-item">
                   <span class="info-label">Episode code</span>
                   <span class="info-value js-episode-code">S01E01</span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Season</span>
                   <span class="info-value js-episode-season">Season 1</span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Episode number</span>
                   <span class="info-value js-episode-number">1</span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Air date</span>
                   <span class="info-value js-episode-air-date"
                     >December 2, 2013</span
                   >
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Episode ID</span>
                   <span class="info-value js-episode-id">1</span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Created</span>
                   <span class="info-value js-episode-created">Unknown</span>
                 </div>
               </div>
 
-              <a href="episodes.html" class="back-button">
-                ← Back to Episodes
-              </a>
+              <a href="episodes.html" class="back-button"> Back to Episodes </a>
             </div>
           </div>
         </section>
 
+        <!-- Episode Characters -->
         <section class="episode-characters">
           <div class="section-heading">
             <div>
-              <span class="section-label">CAST</span>
+              <span class="section-eyebrow">CAST</span>
               <h2>Featured Characters</h2>
               <p class="section-description">
                 Characters who appeared in this episode.
               </p>
             </div>
 
-            <span class="character-count js-episode-character-count">
-              0 Characters
+            <span class="count-badge">
+              <span class="js-character-count">0</span> Characters
             </span>
           </div>
 

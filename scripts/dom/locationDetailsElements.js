@@ -11,13 +11,12 @@ export const locationDetailsElements = {
     label: getElement(".js-location-label"),
     subtitle: getElement(".js-location-subtitle"),
     dimension: getElement(".js-location-dimension"),
-    residentCount: document.querySelectorAll(".js-location-resident-count"),
     id: getElement(".js-location-id"),
     created: getElement(".js-location-created"),
   },
 
   locationResidents: {
-    residentCount: document.querySelectorAll(".js-location-resident-count"),
+    residentCount: document.querySelectorAll(".js-character-count"),
     residentGrid: getElement(".js-location-resident-grid"),
   },
 };

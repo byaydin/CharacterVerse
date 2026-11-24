@@ -19,7 +19,7 @@ export function EpisodeCard(episode) {
 
         <div class="info-card-footer">
           <span class="info-card-details">${episode.characters.length} characters</span>
-          <button class="info-card-btn">View Details →</button>
+          <button class="info-card-btn">View Details</button>
         </div>
       </a>
     </article>

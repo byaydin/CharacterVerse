@@ -51,7 +51,7 @@ function updateCharacterProfile(character) {
   // Heading
   label.textContent = `CHARACTER PROFILE #${character.id}`;
   name.textContent = characterName;
-  subtitle.textContent = `${characterSpecies} · ${characterGender}`;
+  subtitle.textContent = `${characterSpecies} - ${characterGender}`;
 
   // Character information
   species.textContent = characterSpecies;
@@ -68,7 +68,7 @@ async function updateCharacterEpisodes(character) {
 
   elements.sectionDescription.textContent = `Episodes featuring ${character.name}.`;
 
-  elements.episodeCount.textContent = `${character.episode.length} Episodes`;
+  elements.episodeCount.textContent = character.episode.length;
 
   // Fetch all episodes concurrently
   const episodes = await Promise.all(
@@ -92,6 +92,7 @@ async function initializeCharacterDetailsPage() {
   } catch (error) {
     const container = getElement(".main-container");
     showErrorMessage(error, container, "Failed to load character.");
+    console.error(error);
   }
 }
 

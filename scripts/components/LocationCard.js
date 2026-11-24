@@ -16,7 +16,7 @@ export function LocationCard(location) {
 
         <div class="info-card-footer">
           <span class="info-card-details">${location.residents.length} residents</span>
-          <button class="info-card-btn">View Details →</button>
+          <button class="info-card-btn">View Details</button>
         </div>
       </a>
     </article>

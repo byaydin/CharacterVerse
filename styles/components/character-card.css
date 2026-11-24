@@ -122,13 +122,11 @@
 
 /* Image Loading */
 
-.card-image.loading img,
-.profile-image.loading img {
+.loading img {
   opacity: 0;
 }
 
-.card-image.loading::after,
-.profile-image.loading::after {
+.loading::after {
   content: "";
   position: absolute;
   top: 50%;

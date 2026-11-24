@@ -43,7 +43,7 @@ function updateEpisodeProfile(episode) {
   });
 
   label.textContent = `EPISODE PROFILE #${episode.id}`;
-  subtitle.textContent = `Season ${seasonNumber} · Episode ${episodeNumber}`;
+  subtitle.textContent = `Season ${seasonNumber} - Episode ${episodeNumber}`;
   season.textContent = seasonNumber;
   number.textContent = episodeNumber;
   airDate.textContent = episode.air_date;
@@ -55,14 +55,14 @@ async function updateEpisodeCharacters(episode) {
   const elements = episodeDetailsElements.episodeCharacters;
   const characterUrls = episode.characters;
 
-  elements.characterCount.textContent = `${characterUrls.length} Characters`;
+  elements.characterCount.textContent = characterUrls.length;
 
   const characters = await Promise.all(
     characterUrls.map((url) => fetchApiData(url)),
   );
 
   renderCharacters(characters, elements.characterGrid);
-  
+
   document.querySelectorAll(".card-image img").forEach((img) => {
     handleImageLoading(img);
   });
@@ -82,6 +82,7 @@ async function initializeEpisodeDetailsPage() {
   } catch (error) {
     const container = getElement(".main-container");
     showErrorMessage(error, container, "Failed to load episode.");
+    console.error(error);
   }
 }
 

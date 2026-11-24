@@ -19,7 +19,7 @@ export const episodeDetailsElements = {
   },
 
   episodeCharacters: {
-    characterCount: getElement(".js-episode-character-count"),
+    characterCount: getElement(".js-character-count"),
     characterGrid: getElement(".js-episode-character-grid"),
   },
 };

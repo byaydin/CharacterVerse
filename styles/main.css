@@ -15,12 +15,13 @@
 @import url("components/stat-card.css");
 @import url("components/character-card.css");
 @import url("components/info-card.css");
+@import url("components/detail-view-card.css");
 @import url("components/skeleton-card.css");
 @import url("components/pagination.css");
+@import url("components/breadcrumb.css");
 
 @import url("sections/hero.css");
 @import url("sections/statistics.css");
 @import url("sections/explore.css");
 
-@import url("pages/character-details.css");
-@import url("pages/episode-details.css");
+@import url("pages/single-page.css");

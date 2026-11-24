@@ -38,7 +38,7 @@
 
         <!-- Navigation -->
         <nav class="nav-links">
-          <a href="../" class="nav-link active">Explorer</a>
+          <a href="../" class="nav-link">Explorer</a>
           <a href="characters.html" class="nav-link">Characters</a>
           <a href="locations.html" class="nav-link">Locations</a>
           <a href="episodes.html" class="nav-link">Episodes</a>
@@ -64,7 +64,9 @@
     <!-- Main content -->
     <main class="main-content">
       <div class="main-container">
-        <section class="episode-details">
+        <!-- Detail Section -->
+        <section class="detail-section">
+          <!-- Breadcrumb -->
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../index.html">Home</a>
             <span>/</span>
@@ -73,75 +75,79 @@
             <span class="current js-location-name">Location Details</span>
           </nav>
 
-          <div class="episode-profile">
-            <div class="episode-cover">
-              <div class="episode-cover-content">
-                <span class="cover-label">RICK AND MORTY</span>
-                <span class="cover-code js-location-type">PLANET</span>
+          <!-- Detail View -->
+          <div class="detail-view">
+            <div class="detail-view-card">
+              <div class="detail-view-card-content">
+                <span class="detail-view-card-label">RICK AND MORTY</span>
+                <span class="detail-view-card-value js-location-type"
+                  >PLANET</span
+                >
                 <h1 class="js-location-name">Earth (C-137)</h1>
-                <span class="cover-decoration">LOCATION</span>
+                <span class="detail-view-card-decoration">LOCATION</span>
               </div>
             </div>
 
-            <div class="episode-content">
-              <div class="episode-heading">
-                <span class="profile-label js-location-label">
+            <div class="detail-view-content">
+              <div class="detail-view-heading">
+                <span class="detail-view-label js-location-label">
                   LOCATION PROFILE #001
                 </span>
                 <h2 class="js-location-name">Earth (C-137)</h2>
-                <p class="episode-subtitle js-location-subtitle">
-                  Planet · Dimension C-137
+                <p class="detail-view-subtitle js-location-subtitle">
+                  Planet - Dimension C-137
                 </p>
               </div>
 
-              <div class="episode-info">
-                <div class="episode-info-item">
+              <div class="detail-view-info">
+                <div class="detail-view-info-item">
                   <span class="info-label">Location type</span>
                   <span class="info-value js-location-type">Planet</span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Dimension</span>
                   <span class="info-value js-location-dimension">
                     Dimension C-137
                   </span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Resident count</span>
-                  <span class="info-value js-location-resident-count"> 0 </span>
+                  <span class="info-value js-character-count"> 0 </span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Location ID</span>
                   <span class="info-value js-location-id">1</span>
                 </div>
 
-                <div class="episode-info-item">
+                <div class="detail-view-info-item">
                   <span class="info-label">Created</span>
                   <span class="info-value js-location-created"> Unknown </span>
                 </div>
               </div>
 
               <a href="locations.html" class="back-button">
-                ← Back to Locations
+                Back to Locations
               </a>
             </div>
           </div>
         </section>
 
-        <section class="episode-characters">
+        <!-- Location Characters -->
+        <section class="location-characters">
           <div class="section-heading">
             <div>
-              <span class="section-label">INHABITANTS</span>
+              <span class="section-eyebrow">INHABITANTS</span>
               <h2>Location Residents</h2>
               <p class="section-description">
                 Characters who have been spotted at this location.
               </p>
             </div>
 
-            <span class="character-count js-location-resident-count">
-              0 Residents
+            <span class="count-badge">
+              <span class="js-character-count">0</span> Residents
             </span>
           </div>
 
