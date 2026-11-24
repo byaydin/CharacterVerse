@@ -1,7 +1,8 @@
-import { loadStatistics } from "./features/statistics/statistics.js";
+import { BASE_PATH } from "./config.js";
+import { getElement } from "./utils/dom.js";
 
 async function main() {
-  loadStatistics();
+  getElement(".logo").href = `${BASE_PATH}`;
 }
 
 main();

@@ -6,7 +6,7 @@ import {
   getAllEpisodes,
 } from "../../api/resources.js";
 
-export async function loadStatistics() {
+async function initializeStatistics() {
   try {
     const [allCharacters, allLocations, allEpisodes, aliveCharacters] =
       await Promise.all([
@@ -24,3 +24,5 @@ export async function loadStatistics() {
     console.error("Error loading statistics:", error);
   }
 }
+
+initializeStatistics();
