@@ -8,5 +8,5 @@ export const paginationElements = {
     last: getElement(".page-button.last"),
   },
 
-  pageNumbers: getElement(".page-numbers"),
+  pageNumbers: getElement(".pagination-numbers"),
 };
