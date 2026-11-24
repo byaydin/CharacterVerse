@@ -47,16 +47,6 @@ The API provides three main resources:
 
 All data is retrieved dynamically through JavaScript Fetch API requests.
 
-This project was created to practice and improve frontend development skills, particularly:
-
-- Working with REST APIs and asynchronous JavaScript.
-- Understanding JavaScript modules and code organization.
-- Manipulating the DOM dynamically.
-- Building reusable UI components.
-- Handling API responses and errors.
-- Managing navigation and URL parameters.
-- Deploying static websites using GitHub Pages.
-
 ## 🎯 Project Goals
 
 This project was created to practice and improve frontend development skills, particularly:
