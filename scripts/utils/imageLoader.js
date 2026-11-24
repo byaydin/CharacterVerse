@@ -1,4 +1,6 @@
-const placeholder = "../images/placeholder-image.jpeg";
+import { BASE_PATH } from "../config";
+
+const placeholder = `${BASE_PATH}images/placeholder-image.jpeg`;
 
 export function handleImageLoading(img) {
   const imageContainer = img.parentElement;
