@@ -1,4 +1,4 @@
-import { BASE_PATH } from "../config";
+import { BASE_PATH } from "../config.js";
 
 const placeholder = `${BASE_PATH}images/placeholder-image.jpeg`;
 
