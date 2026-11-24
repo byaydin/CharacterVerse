@@ -1,0 +1,31 @@
+:root {
+  /* Backgrounds */
+  --bg-primary: #080b16;
+  --bg-secondary: #111827;
+  --bg-card: #1c2638;
+  --bg-hover: #273449;
+
+  /* Accents */
+  --accent-primary: #a3e635;
+  --accent-secondary: #22d3ee;
+  --accent-purple: #a78bfa;
+
+  /* Typography */
+  --text-primary: #f9fafb;
+  --text-secondary: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-disabled: #6b7280;
+
+  /* Borders */
+  --border-color: #293548;
+
+  /* Status */
+  --status-alive: #22c55e;
+  --status-dead: #ef4444;
+  --status-unknown: #f59e0b;
+
+  /* Scrollbar */
+  --sb-track-color: var(--bg-secondary);
+  --sb-thumb-color: var(--accent-primary);
+  --sb-size: 4px;
+}

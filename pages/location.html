@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Details | CharacterVerse</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <span class="logo-icon">✦</span>
+          <span>Character<span class="logo-highlight">Verse</span></span>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+          <a href="../" class="nav-link active">Explorer</a>
+          <a href="characters.html" class="nav-link">Characters</a>
+          <a href="locations.html" class="nav-link">Locations</a>
+          <a href="episodes.html" class="nav-link">Episodes</a>
+        </nav>
+
+        <!-- Header actions -->
+        <div class="header-actions">
+          <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input
+              type="text"
+              placeholder="Search locations..."
+              aria-label="Search locations"
+            />
+            <kbd>/</kbd>
+          </div>
+
+          <button class="theme-button" aria-label="Toggle theme">☼</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <div class="main-container">
+        <section class="episode-details">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <a href="locations.html">Locations</a>
+            <span>/</span>
+            <span class="current js-location-name">Location Details</span>
+          </nav>
+
+          <div class="episode-profile">
+            <div class="episode-cover">
+              <div class="episode-cover-content">
+                <span class="cover-label">RICK AND MORTY</span>
+                <span class="cover-code js-location-type">PLANET</span>
+                <h1 class="js-location-name">Earth (C-137)</h1>
+                <span class="cover-decoration">LOCATION</span>
+              </div>
+            </div>
+
+            <div class="episode-content">
+              <div class="episode-heading">
+                <span class="profile-label js-location-label">
+                  LOCATION PROFILE #001
+                </span>
+                <h2 class="js-location-name">Earth (C-137)</h2>
+                <p class="episode-subtitle js-location-subtitle">
+                  Planet · Dimension C-137
+                </p>
+              </div>
+
+              <div class="episode-info">
+                <div class="episode-info-item">
+                  <span class="info-label">Location type</span>
+                  <span class="info-value js-location-type">Planet</span>
+                </div>
+
+                <div class="episode-info-item">
+                  <span class="info-label">Dimension</span>
+                  <span class="info-value js-location-dimension">
+                    Dimension C-137
+                  </span>
+                </div>
+
+                <div class="episode-info-item">
+                  <span class="info-label">Resident count</span>
+                  <span class="info-value js-location-resident-count"> 0 </span>
+                </div>
+
+                <div class="episode-info-item">
+                  <span class="info-label">Location ID</span>
+                  <span class="info-value js-location-id">1</span>
+                </div>
+
+                <div class="episode-info-item">
+                  <span class="info-label">Created</span>
+                  <span class="info-value js-location-created"> Unknown </span>
+                </div>
+              </div>
+
+              <a href="locations.html" class="back-button">
+                ← Back to Locations
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="episode-characters">
+          <div class="section-heading">
+            <div>
+              <span class="section-label">INHABITANTS</span>
+              <h2>Location Residents</h2>
+              <p class="section-description">
+                Characters who have been spotted at this location.
+              </p>
+            </div>
+
+            <span class="character-count js-location-resident-count">
+              0 Residents
+            </span>
+          </div>
+
+          <div
+            class="explorer-grid character-grid js-location-resident-grid"
+          ></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Footer main -->
+        <div class="footer-main">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="/" class="logo">
+              <span class="logo-icon">✦</span>
+              <span>Character<span class="logo-highlight">Verse</span></span>
+            </a>
+
+            <p>
+              Explore fascinating characters, discover strange locations, and
+              travel through an entire universe.
+            </p>
+
+            <span class="footer-decoration">✧ Explore the unknown</span>
+          </div>
+
+          <!-- Navigation -->
+          <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="../">Explorer</a>
+            <a href="characters.html">Characters</a>
+            <a href="locations.html">Locations</a>
+            <a href="episodes.html">Episodes</a>
+          </div>
+
+          <!-- Resources -->
+          <div class="footer-links">
+            <h3>Resources</h3>
+            <a href="https://rickandmortyapi.com/">API Documentation</a>
+            <a href="https://github.com/">GitHub</a>
+            <a href="#">About Project</a>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 CharacterVerse. All rights reserved.</p>
+          <p>
+            Data provided by
+            <a href="https://rickandmortyapi.com/">The Rick and Morty API</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="../scripts/pages/locationDetailsPage.js"
+    ></script>
+  </body>
+</html>

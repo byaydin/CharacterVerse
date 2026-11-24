@@ -1,0 +1,148 @@
+/* Character Card */
+
+.character-card {
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.character-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.character-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--bg-hover);
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.character-card:hover .card-image img {
+  transform: scale(1.06);
+}
+
+.character-status {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  background: rgba(8, 11, 22, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.character-status.alive .status-dot {
+  background: var(--status-alive);
+}
+
+.character-status.dead .status-dot {
+  background: var(--status-dead);
+}
+
+.character-status.unknown .status-dot {
+  background: var(--status-unknown);
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.character-name {
+  margin: 0 0 5px;
+  color: var(--text-primary);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.character-species {
+  margin: 0 0 20px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.character-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.info-label {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.info-value {
+  overflow: hidden;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Image Loading */
+
+.card-image.loading img,
+.profile-image.loading img {
+  opacity: 0;
+}
+
+.card-image.loading::after,
+.profile-image.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  animation: image-spinner 0.8s linear infinite;
+}
+
+@keyframes image-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

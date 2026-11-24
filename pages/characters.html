@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Characters | CharacterVerse</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <span class="logo-icon">✦</span>
+          <span>Character<span class="logo-highlight">Verse</span></span>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+          <a href="../" class="nav-link">Explorer</a>
+          <a href="characters.html" class="nav-link active">Characters</a>
+          <a href="locations.html" class="nav-link">Locations</a>
+          <a href="episodes.html" class="nav-link">Episodes</a>
+        </nav>
+
+        <!-- Header actions -->
+        <div class="header-actions">
+          <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input
+              id="search-characters"
+              type="text"
+              placeholder="Search characters..."
+              aria-label="Search characters"
+            />
+            <kbd>/</kbd>
+          </div>
+
+          <button class="theme-button" aria-label="Toggle theme">☼</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <div class="main-container">
+        <!-- Character explorer -->
+        <section class="explorer-section characters">
+          <div class="section-heading">
+            <div>
+              <span class="section-eyebrow">THE MULTIVERSE DATABASE</span>
+              <h2>Discover Characters</h2>
+              <p>Find your favorite personalities from across the universe.</p>
+            </div>
+            <span class="results-count">Showing 0 characters</span>
+          </div>
+
+          <!-- Filters -->
+          <div class="filter-bar">
+            <div class="filter-group-container">
+              <div class="filter-group">
+                <label for="character-status-filter">Status</label>
+                <select id="character-status-filter">
+                  <option value="">All statuses</option>
+                  <option value="alive">Alive</option>
+                  <option value="dead">Dead</option>
+                  <option value="unknown">Unknown</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="character-species-filter">Species</label>
+                <select id="character-species-filter">
+                  <option value="">All species</option>
+                  <option value="human">Human</option>
+                  <option value="alien">Alien</option>
+                  <option value="humanoid">Humanoid</option>
+                  <option value="robot">Robot</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="character-gender-filter">Gender</label>
+                <select id="character-gender-filter">
+                  <option value="">All genders</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="genderless">Genderless</option>
+                  <option value="unknown">Unknown</option>
+                </select>
+              </div>
+            </div>
+            <button class="reset-filters">Reset filters</button>
+          </div>
+
+          <!-- Character cards -->
+          <div class="explorer-grid character-grid"></div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <button class="page-button first">«</button>
+            <button class="page-button prev">‹</button>
+
+            <div class="page-numbers"></div>
+
+            <button class="page-button next">›</button>
+            <button class="page-button last">»</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Footer main -->
+        <div class="footer-main">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="/" class="logo">
+              <span class="logo-icon">✦</span>
+              <span>Character<span class="logo-highlight">Verse</span></span>
+            </a>
+
+            <p>
+              Explore fascinating characters, discover strange locations, and
+              travel through an entire universe.
+            </p>
+
+            <span class="footer-decoration">✧ Explore the unknown</span>
+          </div>
+
+          <!-- Navigation -->
+          <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="../">Explorer</a>
+            <a href="characters.html">Characters</a>
+            <a href="locations.html">Locations</a>
+            <a href="episodes.html">Episodes</a>
+          </div>
+
+          <!-- Resources -->
+          <div class="footer-links">
+            <h3>Resources</h3>
+            <a href="https://rickandmortyapi.com/"> API Documentation </a>
+            <a href="https://github.com/"> GitHub </a>
+            <a href="#">About Project</a>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 CharacterVerse. All rights reserved.</p>
+          <p>
+            Data provided by
+            <a href="https://rickandmortyapi.com/"> The Rick and Morty API </a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="../scripts/pages/charactersPage.js"></script>
+  </body>
+</html>

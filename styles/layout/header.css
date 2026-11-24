@@ -1,0 +1,273 @@
+/* Header */
+
+.site-header {
+  width: 100%;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1400px;
+  height: 76px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--text-primary);
+  font-size: 21px;
+  font-weight: 750;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.logo-icon {
+  color: var(--accent-primary);
+  font-size: 30px;
+}
+
+.logo-highlight {
+  color: var(--accent-primary);
+}
+
+/* Navigation */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-primary);
+}
+
+/* Header Actions */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Search */
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 260px;
+  height: 42px;
+
+  padding: 0 12px 0 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  transition: border-color 0.2s ease;
+}
+
+.search-box:focus-within {
+  border-color: var(--accent-primary);
+}
+
+.search-icon {
+  color: var(--text-muted);
+  font-size: 22px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-60%);
+  line-height: 1;
+}
+
+.search-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.search-box input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-box kbd {
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+/* Theme Button */
+
+.theme-button {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  color: var(--accent-primary);
+  font-size: 21px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.theme-button:hover {
+  background: var(--bg-hover);
+}
+
+.theme-button:active {
+  border-color: var(--accent-primary);
+}
+
+/* Responsive Header */
+
+@media (max-width: 960px) {
+  .header-container {
+    gap: 20px;
+    padding: 0 24px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .search-box {
+    width: 190px;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-container {
+    height: auto;
+    min-height: 70px;
+    padding: 14px 20px;
+
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Navigation moves to a second row */
+  .nav-links {
+    order: 3;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    padding: 12px 0 4px;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .search-box {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: space-around;
+  }
+
+  .logo {
+    font-size: 17px;
+    gap: 6px;
+  }
+
+  .logo-icon {
+    font-size: 25px;
+  }
+
+  .search-box {
+    width: 130px;
+    height: 38px;
+    padding: 0 8px;
+    gap: 6px;
+  }
+
+  .search-box input {
+    font-size: 12px;
+    min-width: 0;
+  }
+
+  .search-box kbd {
+    display: none;
+  }
+
+  .theme-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-actions {
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}

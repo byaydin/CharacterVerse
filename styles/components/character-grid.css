@@ -1,0 +1,21 @@
+/* Character Grid */
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* Responsive Character Grid */
+
+@media (max-width: 1190px) {
+  .character-grid {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 967px) {
+  .character-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
